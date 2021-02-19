@@ -16,5 +16,5 @@ RUN wget `curl https://api.github.com/repos/chaitin/xray/releases/latest | grep 
 
 RUN ./xray_linux_amd64  genca && cp ca.crt /usr/local/share/ca-certificates && update-ca-certificates
 
-CMD ["bash"]
+CMD ["bash"]  
 
